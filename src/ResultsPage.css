@@ -1,0 +1,108 @@
+body {
+  background-color: #f4f7f6; /* Gentle background color */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern font */
+  padding: 20px; /* Padding around the entire content */
+  color: #333; /* Universal text color for better readability */
+}
+
+.form-data-container {
+  background-color: #ffffff; /* White background for each form container */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the container */
+  margin-bottom: 30px; /* Margin at the bottom of each container */
+  overflow: hidden; /* Ensures the box-shadow and border-radius are properly applied */
+}
+
+/* Style the heading of each form */
+.form-data-container h2 {
+  background-color: #2c3e50; /* Darker background for the heading */
+  color: #ecf0f1; /* Light text color for contrast */
+  padding: 15px 20px; /* Padding inside the heading */
+  margin: -20px -20px 20px -20px; /* Align the heading with the edges of the container */
+  border-top-left-radius: 8px; /* Rounded top-left corner */
+  border-top-right-radius: 8px; /* Rounded top-right corner */
+}
+
+/* Style for the toolbar container */
+.toolbar {
+  display: flex; /* Align toolbar items in a row */
+  justify-content: flex-start; /* Align to the start of the container */
+  flex-wrap: wrap; /* Wrap items to the next line if not enough space */
+  margin-bottom: 10px; /* Space between toolbar and textarea */
+}
+
+/* Button styling */
+button {
+  background-color: #3498db; /* Blue background for buttons */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 8px 15px; /* Padding inside buttons */
+  margin-right: 10px; /* Margin between buttons */
+  margin-bottom: 10px; /* Margin below buttons, for wrapping */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  outline: none; /* Remove outline */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover effects */
+}
+
+button:hover {
+  background-color: #2980b9; /* Slightly darker blue on hover */
+  transform: translateY(-2px); /* Small lift effect on hover */
+}
+
+/* Full-width textarea styling */
+.form-data-textarea {
+  width: 100%; /* Full width to fill the container */
+  min-height: 150px; /* Minimum height */
+  padding: 10px; /* Padding inside the textarea */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  resize: vertical; /* Allow vertical resizing only */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Match the font with the body */
+  font-size: 16px; /* Readable font size */
+}
+
+/* Ensure inputs and buttons are aligned properly */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea,
+button {
+  vertical-align: middle;
+}
+
+/* Optional: Add a hover effect to the form containers */
+.form-data-container:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.convert-btn {
+  margin-top: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.convert-btn:hover {
+  background-color: #2980b9;
+}
+.go-home-btn {
+  position: absolute;
+  right: 20px;
+  top: px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-data-container {
+  position: relative;
+  padding-top: 20px; /* Adjust this value as needed */
+}

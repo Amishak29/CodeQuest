@@ -1,0 +1,98 @@
+.form-container {
+  max-width: 800px; /* Adjust the max width as needed */
+  margin: 20px auto; /* Center the form */
+  padding: 20px;
+  background-color: #f8f8f8; /* Light grey background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical; /* Allow vertical resizing for textareas */
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight color when focused */
+  box-shadow: inset 0 1px 3px rgba(0, 123, 255, 0.1); /* Subtle inner shadow for depth */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff; /* A nice blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darken the button slightly on hover */
+}
+
+button:active {
+  background-color: #003d82; /* Even darker when pressed */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Highlight color when focused */
+}
+
+.remove-button {
+  background-color: #dc3545; /* A red color for the remove button */
+}
+
+.remove-button:hover {
+  background-color: #c82333; /* Darken the remove button slightly on hover */
+}
+
+.add-button {
+  background-color: #28a745; /* A green color for the add button */
+}
+
+.add-button:hover {
+  background-color: #218838; /* Darken the add button slightly on hover */
+}
+
+.submit-all-button {
+  background-color: #17a2b8; /* A teal color for the submit all button */
+}
+
+.submit-all-button:hover {
+  background-color: #138496; /* Darken the submit all button slightly on hover */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    margin: 10px;
+  }
+}

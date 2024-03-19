@@ -1,0 +1,164 @@
+/* Apply a general font and padding to the entire display page */
+.display-page {
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  background: #f0f0f0;
+}
+
+/* Style for individual problem containers */
+.problem-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.problem-container:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the problem title */
+h2 {
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Style form elements consistently */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Style for the editable textarea */
+.editable-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add subtle transitions for interactive elements */
+input[type="text"],
+.editable-textarea {
+  transition: border-color 0.3s;
+}
+
+/* Additional classes for animations and transitions */
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .problem-container {
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+.submit-button-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.submit-button-container button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button-container button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Popup styles */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  margin-bottom: 1rem;
+}
+
+.popup button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+  color: white;
+}
